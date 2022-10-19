@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-background-light-mode);
+    height: 10vh;
+    width: calc(100vw - 10px);
+    margin: 0 -45px;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text-light-mode);
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    height: calc(100% - 10vh);
+    width: 80%;
+    max-width: 450px;
+    background-color: aqua;
+    border-color: brown;
+    z-index: 1;
+}
+
+.header > p {
+    padding: 0px 90px 0px 0px;
+}
