@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+	display: inline-block;
+    height: 2rem;
+    width: 3.75rem;
+}
+
+.changeMode {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.control {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #CCC;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.control::before {
+    position: absolute;
+    content: "";
+       
+}

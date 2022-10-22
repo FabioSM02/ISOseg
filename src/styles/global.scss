@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --color-background-light-mode: #F2F3F5;
+    --color-background-dark-mode: #404040;
+
+    --color-text-light-mode: #666;
+    
+    --color-purple-100: #3D48F5;
+    --color-purple-200: #3E4AF7;
+    --color-purple-400: #404CFF;
+
+    --color-blue-100: #1B206B;
+    --color-blue-200: #1D2375;
+
+    --color-gray-100: #A1B3B0;
+    /* cores em tons de roxo */
+}
+
+.dark-mode:root {
+  --color-background: #404040;
+  --color-text: #111111;
+}
+
+body {
+  background-color: var(--color-background-light-mode);
+}
+
+body, input, textarea, button {
+  font: 500 1rem 'Inter', sans-serif;
+  color: var(--color-text-light-mode)
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: Lexend, sans-serif;
+  /* color: ; */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width:1080px){
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px){
+  html {
+    font-size: 87.5%;
+  }
+}
