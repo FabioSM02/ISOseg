@@ -1,30 +1,113 @@
-.header {
+.fullWrapper {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+
+    .navWrapper {
+        padding: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: darkgray;
+
+        .container {
+            display: none;
+            position: absolute;
+            top: 1.3rem;
+            right: 1.25rem;
+            z-index: 2;
+            cursor: pointer;
+
+            .bar1, .bar2, .bar3 {
+                width: 2rem;
+                height: .3rem;
+                background-color: #333;
+                margin: .375rem 0;
+                transition: .4s;
+            }
+        }
+        
+        .divUl {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    margin: 0 .6rem;
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-background-light-mode);
-    height: 10vh;
-    width: calc(100vw - 10px);
-    margin: 0 -45px;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--color-text-light-mode);
+    max-width: 100% !important;
+    background-color: darkgray;
+
+    .show ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+    }
 }
 
-.logo {
-    height: 50px;
-    width: 50px;
+.brandLogo > img {
+    margin-right: .6rem;
 }
 
-.menu {
-    height: calc(100% - 10vh);
-    width: 80%;
-    max-width: 450px;
-    background-color: aqua;
-    border-color: brown;
-    z-index: 1;
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
 }
 
-.header > p {
-    padding: 0px 90px 0px 0px;
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, 11px) rotate(45deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .navWrapper {
+        justify-content: flex-start;
+
+        .container {
+            display: inline-block;
+        }
+
+        .divUl {
+            top: 0;
+            left: 0;
+            max-width: 0;
+            height: 100vh;
+            transition: .3s;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+
+            ul {
+                display: none;
+
+                li {
+                    padding: .6rem;
+
+                    li > a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }

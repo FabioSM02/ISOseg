@@ -1,12 +1,15 @@
-import type { NextPage } from 'next'
+import React from 'react';
+import type { NextPage } from 'next';
 
-import { Header } from '../components/Header'
+import Header from '../components/Header';
 
-import styles from './home.module.scss'
+import styles from './home.module.scss';
 
 const Home: NextPage = () => {
   return (
+    <div>
       <Header/>
+    </div>
   )
 }
 
