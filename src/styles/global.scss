@@ -17,10 +17,12 @@
     --color-purple-200: #3E4AF7;
     --color-purple-400: #404CFF;
 
-    --color-blue-100: #1B206B;
-    --color-blue-200: #1D2375;
+    --color-blue-100: #3038a7;
+    --color-blue-200: #1B206B;
+    --color-blue-300: #1D2375;
 
-    --color-gray-100: #A1B3B0;
+    --color-gray-100: #BDCCCA;
+    --color-gray-200: #A1B3B0;
     /* cores em tons de roxo */
 }
 
@@ -34,7 +36,7 @@ body {
 }
 
 body, input, textarea, button {
-  font: 500 1rem 'Inter', sans-serif;
+  font: 500 1rem 'Lexend', sans-serif;
   color: var(--color-text-light-mode)
 }
 

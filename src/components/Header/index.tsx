@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 import styles from './header.module.scss';
@@ -6,13 +6,14 @@ import logoImg from '../../../public/vercel.svg';
 
 export default function Header(){
 
-    // const
-    const li = document.querySelectorAll('ul>li')
-    const menu = document.querySelector('.container')
-    const div_ul = document.querySelector('.div-ul')
+    // const li = document.querySelectorAll('ul>li')
+    // const menu = document.querySelector('.container')
+    // const div_ul = document.querySelector('.div-ul')
+
+    // Fazer lógica para modo responsivo
 
     return (
-        <header>
+        <header className={styles.header}>
             <nav className={styles.fullWrapper}>
                 <div className={styles.navWrapper}>
                     <div className={styles.container}>

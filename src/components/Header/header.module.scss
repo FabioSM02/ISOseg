@@ -1,13 +1,14 @@
 .fullWrapper {
     top: 0;
     width: 100vw;
+    height: 15vh;
     position: fixed;
+    // background-color: var(--color-blue-200);
+    background-image: linear-gradient(to left, var(--color-blue-200), var(--color-purple-100));
 
     .navWrapper {
         padding: 1.25rem;
         display: flex;
-        justify-content: space-between;
-        background-color: darkgray;
 
         .container {
             display: none;
@@ -39,10 +40,17 @@
                 li {
                     margin: 0 .6rem;
                     list-style: none;
-
+                    
                     a {
                         text-decoration: none;
-                        color: #333;
+                        color: var(--color-gray-100);
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                    }
+
+                    a:hover {
+                        color: var(--color-background-button);
+                        transition: ease-in-out .8s;
                     }
                 }
             }
