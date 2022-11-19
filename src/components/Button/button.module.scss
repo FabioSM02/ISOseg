@@ -1,0 +1,22 @@
+.wrapperButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+
+            .button {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                border: 0px;
+                background-image: url(./Web/icons8-assessments-32.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .button:hover {
+                background-color: rgba(58, 58, 58, 0.2);
+                transition-delay: .4s;
+            }
+}

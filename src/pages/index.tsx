@@ -3,7 +3,6 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 
 import Header from '../components/Header';
-import { SwitchButton } from '../components/SwitchButton';
 
 import styles from './home.module.scss';
 import auditImage from '../../public/icons svg/engineering_team.svg';

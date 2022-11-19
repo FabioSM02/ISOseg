@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 import styles from './header.module.scss';
-import logoImg from '../../../public/vercel.svg';
+import logoImg from '../../../public/icons svg/Web/icons8-survey-50.png';
 
 export default function Header(){
 
@@ -24,6 +24,7 @@ export default function Header(){
                         
                     <a href="#">
                         <Image src={logoImg} alt="logo" />
+                        <p> NOME DA EMPRESA </p>
                     </a>
 
                     <div className={styles.divUl}>
